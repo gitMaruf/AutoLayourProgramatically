@@ -46,7 +46,7 @@ class ViewController: UIViewController {
     let pageControl: UIPageControl = {
         let pc = UIPageControl()
         pc.currentPage = 0
-        pc.numberOfPages = 4
+        pc.numberOfPages = 5
         pc.currentPageIndicatorTintColor = .mainPink
         pc.pageIndicatorTintColor = .gray
         return pc
@@ -69,6 +69,7 @@ class ViewController: UIViewController {
         view.addSubview(descriptionTextView)
         setupLayout()
         setupBottomControls()
+        print("ViewController")
     }
     fileprivate func setupBottomControls(){
         //view.addSubview(previousButton)

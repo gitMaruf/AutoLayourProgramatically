@@ -11,11 +11,19 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
+    var window: UIWindow?
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        return true
+       // window = UIWindow()
+        //window?.makeKeyAndVisible()
+//        let randomViewController = UIViewController()
+//        randomViewController.view.backgroundColor = .red
+//        window?.rootViewController = randomViewController
+        //let layout = UICollectionViewFlowLayout()
+        //let swapcon = SwapingController(collectionViewLayout: layout)
+        print("didFinishLaunchingWithOptions")
+       // window?.rootViewController = swapcon    
+        return false
     }
 
     // MARK: UISceneSession Lifecycle
